@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="styles1.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+
+
 </head>
 
 <body>
@@ -112,7 +116,23 @@
                         of Classical physics: Newtonian mechanics </p>
                 </div>
                 <div class="video">
-                    <img src="pictures1/media bg-cover.png">
+
+                    <video data-poster="pictures1/media bg-cover.png" id="player">
+                        <!-- Video files -->
+                        <!-- <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+                            type="video/mp4" size="576" /> -->
+
+                        <iframe iconUrl="./img/icons/video_icon.svg" allow="autoplay" controls
+                            src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"></iframe>
+
+                    </video>
+
+
+
+
+
+
+                    <!-- <img src="pictures1/media bg-cover.png"> -->
                 </div>
                 <div class="other">
                     <div class="h2 other__h2">
@@ -124,16 +144,18 @@
                             is designed for freelancers who want a
                             simple way to plan their schedule.</p>
                     </div>
-                    <div class="elem1 other__elem1"> <img src="pictures1/elem1.png">
+                    <div class="elem1 other__elem1">
+                        <img src="pictures1/elem1.png">
                         <h5>the quick fox jumps over the lazy
                             dog</h5>
                         <h6>Things on a very small scale ...</h6>
                     </div>
-                    <div class="elem2 other__elem2"></div>
-                    <img src="pictures1/elem2.png">
-                    <h5>the quick fox jumps over the lazy
-                        dog</h5>
-                    <h6>Things on a very small scale ...</h6>
+                    <div class="elem2 other__elem2">
+                        <img src="pictures1/elem2.png">
+                        <h5>the quick fox jumps over the lazy
+                            dog</h5>
+                        <h6>Things on a very small scale ...</h6>
+                    </div>
                 </div>
 
 
@@ -193,5 +215,21 @@
     </div>
 
 </body>
+
+
+
+<script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+<script>
+    const player = new Plyr('#player');
+</script>
+
+
+<!-- <script src="src/js/plyr.js"></script>
+<script>
+    const player = new Plyr('#player');
+</script>
+<script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+<script src="https://cdn.plyr.io/3.7.2/demo.js" crossorigin="anonymous"></script> -->
+
 
 </html>

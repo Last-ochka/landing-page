@@ -13,13 +13,13 @@
 @font-face {
   font-family: "Montserrat";
   src: url(fonts1/Montserrat-Black.ttf);
-  font-style: ;
+
   font-weight: 900;
 }
 @font-face {
   font-family: "Montserrat";
   src: url(fonts1/Montserrat-ExtraBold.ttf);
-  font-style: ;
+
   font-weight: 800;
 }
 @font-face {
@@ -75,8 +75,6 @@ header {
   display: grid;
   grid-template-columns: 550px 384px 100px;
   grid-gap: 10px;
-}
-.logo {
 }
 
 h3 {
@@ -197,7 +195,7 @@ div.second-page > .container {
 }
 .blocks {
   display: grid;
-  grid-gap: px;
+
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -210,7 +208,7 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
-  letter-spacing: 0.2px;
+  letter-spacing: -1.4px;
   color: #fff;
   margin: 0px;
 }
@@ -255,16 +253,18 @@ div.third-page > .container {
   grid-template-areas:
     "h2 h2"
     "text text"
-    "video other";
+    "video  other";
 }
 .third-page__h2 {
   grid-area: h2;
-  width: 480px; /*изменить на 461*/
+  width: 461px; /*480изменить на 461
+  pochemy razmer drugoi*/
   margin: 100px auto 0px;
 }
 .third-page__h2 > h2 {
+  letter-spacing: -0.6px;
   text-align: center;
-  margin-left: 7px;
+  margin-left: -12px;
 }
 .third-page__text {
   grid-area: text;
@@ -277,6 +277,7 @@ div.third-page__text > p {
   margin: 0px;
   margin-top: 5px;
   margin-right: 2px;
+  margin-bottom: 91px;
 }
 
 .video {
@@ -285,20 +286,60 @@ div.third-page__text > p {
 
 div.outher {
   grid-area: other;
+}
+
+div.other__text > p {
+  color: #ffffff;
+  margin: 0px;
+}
+div.other__text {
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 50px; /*!!!*/
+}
+div.other__h2 {
+  margin-top: 21.5px;
+  margin-left: 15px;
+}
+div.other__h2 > h2 {
+  letter-spacing: -0.1px;
+}
+div.other__elem1,
+div.other__elem2 {
+  height: 77px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 279px;
+  margin-left: 17px;
 }
 
 h5 {
   color: #ffffff;
+  margin: 0px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
 }
 h6 {
   color: #ffffff;
-}
-div.other__text > p {
-  color: #ffffff;
   margin: 0px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+div.other__elem1 > h6,
+div.other__elem2 > h6 {
+  margin-top: 12px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+div.other__elem1 {
+  margin-bottom: 32px;
+}
+div.other__elem2 {
+  margin-left: 16px;
 }
 
 .fourth-page {
@@ -317,4 +358,10 @@ div.other__text > p {
 }
 .six-page {
   background-color: #252b42;
+}
+
+.plyr {
+  margin-left: 3px;
+  width: 597px;
+  height: 442px;
 }
