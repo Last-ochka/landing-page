@@ -175,7 +175,9 @@ h4 {
   padding-top: 9px;
 }
 .second-page,
-.third-page {
+.third-page,
+.fifth-page,
+.six-page {
   background-color: #252b42;
 }
 div.second-page > .container {
@@ -230,6 +232,7 @@ div.second-page__text > p {
 .second-page__blocks > div > img {
   margin: 20px 15px 20px 20px;
 }
+
 p {
   font-family: Montserrat;
   font-weight: 500;
@@ -347,18 +350,127 @@ div.other__elem2 {
 }
 .fourth-page > .container {
   height: 678px;
-  width: 1054px;
 }
+.grid__fourth-page,
+.grid__fifth-page {
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content max-content 2fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+}
+div.fourth-page__h2 {
+  margin-top: 80px;
+  margin-right: 6px;
+}
+div.fourth-page__h2 > h2 {
+  font-size: 39px;
+  letter-spacing: -0.4px;
+}
+
+div.fourth-page__text > p {
+  font-family: Montserrat;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  width: 470px;
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+div.fourth-page__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-bottom: 23px;
+}
+div.fourth-page__cards > div {
+  background-color: #ffffff;
+  width: 486px;
+  height: 288px;
+  display: grid;
+
+  justify-items: start;
+  padding: 30px 60px;
+  box-sizing: border-box;
+  position: relative;
+}
+div.fourth-page__cards > div.first-card {
+  margin-left: 130px;
+}
+div.fourth-page__cards > div.second-card {
+  margin-left: 98px;
+}
+div.fourth-page__cards > div.third-card {
+  margin-left: 67px;
+}
+
+.icon-star {
+  position: relative;
+  display: inline-block;
+  width: 18.3px;
+  height: 18.3px;
+  background-image: url("pictures1/star.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-emptyStar {
+  position: relative;
+  display: inline-block;
+  width: 18.3px;
+  height: 18.3px;
+  background-image: url("pictures1/emptyStar.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div.fourth-page__cards h3,
+h6,
+p {
+  color: black;
+}
+div.fourth-page__cards h6,
+p {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+div.fourth-page__cards h3 {
+  margin: 0;
+  padding: 0;
+}
+div.fourth-page__cards img {
+  position: absolute;
+  left: -63px;
+  top: 28px;
+}
+
 .fifth-page > .container {
   height: 608px;
   width: 1054px;
 }
-.fifth-page {
-  background-color: #252b42;
+
+div.grid__fifth-page > h2 {
+  margin-top: 80px;
+  letter-spacing: 0.1px;
 }
-.six-page {
-  background-color: #252b42;
+
+div.grid__fifth-page > p {
+  color: #ffffff;
+  text-align: center;
+  width: 470px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-top: 10px;
 }
+
+/*
+*
+*
+*
+*/
 
 .plyr {
   margin-left: 3px;
