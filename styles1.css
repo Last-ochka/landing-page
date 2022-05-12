@@ -620,9 +620,6 @@ form > input[type="submit"] {
   margin-top: 42px; /* ВСЕ ОЧЕНЬ КРИВОЕ, СДЕЛАТЬ ТАК ЖЕ?*/
 }
 
-footer {
-  height: 338px;
-}
 footer > .container {
   height: 338px;
   width: 1054px;
@@ -635,8 +632,8 @@ footer > .container {
 
   display: grid;
   grid-template-columns: 238px 241px 240px 128px;
-  grid-template-rows: repeat(5, 1em);
-  grid-row-gap: 3px;
+  grid-template-rows: repeat(5, max-content);
+  grid-row-gap: 10px;
   grid-column-gap: 30px;
 }
 ul.footer__social {
@@ -648,6 +645,8 @@ ul.footer__social {
   grid-template-columns: repeat(4, max-content);
   grid-column-gap: 20px;
   padding-inline-start: 0px;
+  margin: 0px;
+  margin-top: 2px;
 }
 .grid__footer p {
   grid-column-start: 1;
@@ -674,7 +673,10 @@ ul.footer__social {
 .grid__footer > h3 {
   white-space: nowrap;
   margin-top: 0px;
-  margin-bottom: 17px;
+  margin-bottom: 9px;
+}
+.footer__youtube {
+  margin-left: -3px;
 }
 .authors {
   display: grid;
