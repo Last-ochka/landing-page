@@ -145,7 +145,6 @@ h4 {
 }
 
 .first-button {
-  appearance: none;
   border: 0;
   font-family: Montserrat;
   border-radius: 37px;
@@ -157,6 +156,21 @@ h4 {
   height: 48px;
   font-weight: 700;
 }
+.first-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.7) inset;
+  -moz-box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.7) inset;
+  box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.7) inset;
+  transition-duration: 0.3s;
+}
+
+.first-button:active {
+  -webkit-box-shadow: 0px 0px 18px 21px rgba(34, 60, 80, 0.4) inset;
+  -moz-box-shadow: 0px 0px 18px 21px rgba(34, 60, 80, 0.4) inset;
+  box-shadow: 0px 0px 18px 21px rgba(34, 60, 80, 0.4) inset;
+  transition-duration: 0.3s;
+}
+
 .second-button {
   margin-left: 6px;
   appearance: none;
@@ -171,13 +185,29 @@ h4 {
   height: 48px;
   border-color: white;
 }
+.second-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.4) inset;
+  -moz-box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.4) inset;
+  box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.4) inset;
+  border: 1px solid #ffffff62;
+  transition-duration: 0.3s;
+}
+
+.second-button:active {
+  -webkit-box-shadow: 0px 0px 18px 21px rgba(34, 60, 80, 0.3) inset;
+  -moz-box-shadow: 0px 0px 18px 21px rgba(34, 60, 80, 0.3) inset;
+  box-shadow: 0px 0px 18px 21px rgba(34, 60, 80, 0.3) inset;
+  transition-duration: 0.3s;
+}
 .first-page_buttons {
   padding-top: 9px;
 }
 .second-page,
 .third-page,
 .fifth-page,
-.six-page {
+.six-page,
+footer {
   background-color: #252b42;
 }
 div.second-page > .container {
@@ -355,7 +385,7 @@ div.other__elem2 {
 .grid__fifth-page {
   height: 100%;
   display: grid;
-  grid-template-rows: max-content max-content 2fr;
+  grid-template-rows: max-content max-content max-content;
   grid-template-columns: 1fr;
   align-items: center;
   text-align: center;
@@ -383,7 +413,7 @@ div.fourth-page__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  padding-bottom: 23px;
+  padding-top: 90px;
 }
 div.fourth-page__cards > div {
   background-color: #ffffff;
@@ -439,6 +469,7 @@ p {
 div.fourth-page__cards h3 {
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 div.fourth-page__cards img {
   position: absolute;
@@ -465,13 +496,201 @@ div.grid__fifth-page > p {
   margin: 0 auto;
   margin-top: 10px;
 }
+div.fifth-page__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 39.5px;
+  padding-top: 50px;
+}
+div.fifth-page__cards > div {
+  background-color: #ffffff;
+  width: 230px;
+  height: 291px;
+  display: grid;
 
+  padding: 30px auto;
+  box-sizing: border-box;
+}
+
+div.fifth-page__cards > div > img {
+  margin: 30px auto;
+}
+div.fifth-page__cards > div.first-card {
+  margin-left: 6px;
+}
+div.fifth-page__cards > div.second-card {
+  margin-left: 1px;
+}
+div.fifth-page__cards > div.third-card {
+  margin-right: 5px;
+}
+div.fifth-page__cards > div.fourth-card {
+  margin-left: -5px;
+}
+.six-page > .container {
+  height: 807px;
+  width: 1054px;
+}
+.grid__six-page {
+  padding-top: 44px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  grid-column-gap: 176px;
+  padding-left: 2px;
+  grid-template-areas:
+    "h2 img"
+    "text img";
+}
+.grid__six-page > p {
+  grid-area: text;
+  color: white;
+  width: 456px;
+  padding-top: 1px;
+}
+.grid__six-page > h2 {
+  grid-area: h2;
+  width: 455px;
+  letter-spacing: -0.9px;
+  padding-top: 56px;
+}
+.grid__six-page > img {
+  grid-area: img;
+  padding-top: 42px;
+}
+
+.seven-page > .container {
+  height: 416px;
+  width: 1054px;
+}
+.seven-page {
+  background-color: #fafafa;
+  position: relative;
+}
+.quote-form {
+  top: -328px;
+  margin-left: 1px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content;
+}
+form {
+  padding: 40px 50px;
+  display: grid;
+  grid-auto-rows: max-content;
+
+  grid-row-gap: 0px;
+  width: 688px;
+  height: 644px;
+  background-color: white;
+  box-sizing: border-box;
+}
+form > h2 {
+  color: black;
+  margin: 0px 0px;
+}
+
+form > input[type="text"],
+input[type="email"],
+select {
+  box-sizing: border-box;
+  width: 585px;
+  height: 50px;
+  padding: 11px 0px;
+}
+form > input[type="text"],
+input[type="email"] {
+  padding-left: 21px;
+}
+
+form > select {
+  padding-left: 18px;
+}
+form > input[type="submit"] {
+  background-color: #ffa62b;
+  border: 0px;
+  height: 58px;
+  width: 588px;
+}
+.form__Name {
+  margin-top: 42px; /* ВСЕ ОЧЕНЬ КРИВОЕ, СДЕЛАТЬ ТАК ЖЕ?*/
+}
+
+footer {
+  height: 338px;
+}
+footer > .container {
+  height: 338px;
+  width: 1054px;
+}
+.grid__footer {
+  margin: auto;
+
+  padding-top: 81px;
+  width: 937px;
+
+  display: grid;
+  grid-template-columns: 238px 241px 240px 128px;
+  grid-template-rows: repeat(5, 1em);
+  grid-row-gap: 3px;
+  grid-column-gap: 30px;
+}
+ul.footer__social {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-column-gap: 20px;
+  padding-inline-start: 0px;
+}
+.grid__footer p {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.footer__social li {
+  list-style: none;
+}
+.grid__footer a {
+  text-decoration: none;
+  line-height: 24px;
+  font-size: 14px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.grid__footer > h3 {
+  white-space: nowrap;
+  margin-top: 0px;
+  margin-bottom: 17px;
+}
+.authors {
+  display: grid;
+  height: 76px;
+  background-color: #384163;
+  text-align: center;
+}
+.authors > h6 {
+  margin: auto 0px;
+  color: #bdbdbd;
+  letter-spacing: 0.2px;
+}
 /*
 *
 *
-*
 */
-
 .plyr {
   margin-left: 3px;
   width: 597px;
