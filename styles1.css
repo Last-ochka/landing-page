@@ -367,6 +367,7 @@ div.other__elem2 > h6 {
   grid-column-start: 2;
   grid-row-end: 3;
   grid-column-end: 3;
+  color: rgb(255, 255, 255);
 }
 div.other__elem1 {
   margin-bottom: 32px;
@@ -427,13 +428,13 @@ div.fourth-page__cards > div {
   position: relative;
 }
 div.fourth-page__cards > div.first-card {
-  margin-left: 130px;
+  margin-left: 127px;
 }
 div.fourth-page__cards > div.second-card {
-  margin-left: 98px;
+  margin-left: 101px;
 }
 div.fourth-page__cards > div.third-card {
-  margin-left: 67px;
+  margin-left: 69px;
 }
 
 .icon-star {
@@ -461,13 +462,16 @@ h6,
 p {
   color: black;
 }
-div.fourth-page__cards h6,
-p {
+div.fourth-page__cards p {
   font-size: 14px;
   letter-spacing: 0.2px;
+  text-align: start;
 }
 div.fourth-page__cards h3 {
   margin: 0;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
   padding: 0;
   white-space: nowrap;
 }
@@ -475,6 +479,9 @@ div.fourth-page__cards img {
   position: absolute;
   left: -63px;
   top: 28px;
+}
+.fourth-page__stars {
+  margin-top: 20px;
 }
 
 .fifth-page > .container {
@@ -512,9 +519,21 @@ div.fifth-page__cards > div {
   padding: 30px auto;
   box-sizing: border-box;
 }
-
+div.fifth-page__cards h6 {
+  margin-top: -8px;
+  color: #ffa62b;
+}
+div.fifth-page__cards h5 {
+  margin-top: -7px;
+  color: #000000;
+}
+div.fifth-page__cards p {
+  width: 149px;
+  margin-top: -11px;
+  margin-left: 38px;
+}
 div.fifth-page__cards > div > img {
-  margin: 30px auto;
+  margin: 30px auto 0px;
 }
 div.fifth-page__cards > div.first-card {
   margin-left: 6px;
@@ -592,6 +611,7 @@ form {
 form > h2 {
   color: black;
   margin: 0px 0px;
+  letter-spacing: -0.4px;
 }
 
 form > input[type="text"],
@@ -601,6 +621,16 @@ select {
   width: 585px;
   height: 50px;
   padding: 11px 0px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #bdbdbd;
+  background-color: #f9f9f9;
+  font-family: Montserrat;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  font-weight: 400;
+  margin-left: 2px;
 }
 form > input[type="text"],
 input[type="email"] {
@@ -609,15 +639,42 @@ input[type="email"] {
 
 form > select {
   padding-left: 18px;
+  cursor: pointer;
+  width: 588px;
+  margin-left: 0px;
+  appearance: none;
+  background: url("pictures1/arrow.png") no-repeat right;
+  background-position-x: calc(100% - 19px);
 }
 form > input[type="submit"] {
   background-color: #ffa62b;
   border: 0px;
   height: 58px;
   width: 588px;
+  font-family: Montserrat;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
 }
 .form__Name {
-  margin-top: 42px; /* ВСЕ ОЧЕНЬ КРИВОЕ, СДЕЛАТЬ ТАК ЖЕ?*/
+  margin-top: 44px;
+  margin-bottom: 12px; /* ВСЕ ОЧЕНЬ КРИВОЕ*/
+}
+.form__Email {
+  margin-top: 15px;
+  margin-bottom: 13px;
+}
+.form__Department {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.form__Time {
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 
 footer > .container {
@@ -626,7 +683,7 @@ footer > .container {
 }
 .grid__footer {
   margin: auto;
-
+  padding-left: 1px;
   padding-top: 81px;
   width: 937px;
 
@@ -647,6 +704,7 @@ ul.footer__social {
   padding-inline-start: 0px;
   margin: 0px;
   margin-top: 2px;
+  margin-left: -1px;
 }
 .grid__footer p {
   grid-column-start: 1;
@@ -675,9 +733,17 @@ ul.footer__social {
   margin-top: 0px;
   margin-bottom: 9px;
 }
-.footer__youtube {
-  margin-left: -3px;
+
+.footer__inst {
+  margin-left: -1px;
 }
+.footer__twitter {
+  margin-left: -1px;
+}
+.footer__youtube {
+  margin-left: -1px;
+}
+
 .authors {
   display: grid;
   height: 76px;
@@ -687,7 +753,7 @@ ul.footer__social {
 .authors > h6 {
   margin: auto 0px;
   color: #bdbdbd;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.4px;
 }
 /*
 *
