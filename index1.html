@@ -6,9 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles1.css" rel="stylesheet">
+
+
+    <link href="1styles1.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link href="media.css" rel="stylesheet">
 
 
 </head>
@@ -36,17 +43,24 @@
                     </div>
 
                     <div class="lupa-cart first-page__lupa-cart">
-                        <a class="lupa first-page__lupa" href="#"><img src="pictures1/lupa.png" alt="Search"></a>
+                        <a class="lupa first-page__lupa" href="#"><span class="icon-lupa"></span> </a>
 
-                        <a class="cart first-page__lupa" href="#"><img src="pictures1/shoppingCart.png"
-                                alt="Shopping Cart"></a>
+                        <a class="cart first-page__cart" href="#"><span class="icon-cart"></span></a>
+                        <span class="nav-toggle"></span>
+                        <!--button-->
                     </div>
 
                 </header>
                 <div>
                     <h1>Experts are here solve your business problem.</h1>
                 </div>
-                <div>
+                <div class="mobile">
+                    <h4>We know how large
+                        objects will act, but things
+                        on a small scale just do
+                        not act that way.</h4>
+                </div>
+                <div class="desctope">
                     <h4>We know how large objects will act,
                         but things on a small scale.</h4>
                 </div>
@@ -108,8 +122,11 @@
             <div class="grid__third-page">
 
                 <div class="h2 third-page__h2">
-                    <h2>We are providing best
+                    <h2 class="desctop">We are providing best
                         business service.</h2>
+                        <h2 class="mobile">We take care 
+                            customers our 
+                            all expert here.</h2>
                 </div>
                 <div class="text third-page__text">
                     <p>Problems trying to resolve the conflict between the two major realms
@@ -314,7 +331,7 @@
                         <h2>Get A Free Quote Here</h2>
                         <h6 class="Name form__Name">Name*</h6> <input type="text" name="Name" value=""
                             placeholder="Full Name" required>
-                        <h6 class="Email form__Email">Email*</h6> <input type="email" name="Email" value=""
+                        <h6 class="Email form__Email">Email*</h6> <input type="text" name="Email" value=""
                             placeholder="example@gmail.com" required>
                         <h6 class="Department form__Department">Department *</h6> <select name="Department">
                             <option selected value="1">Please Select</option>
