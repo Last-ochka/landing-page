@@ -209,7 +209,6 @@ footer {
 }
 div.second-page > .container {
   height: 799px;
-
 }
 .grid__second-page {
   display: grid;
@@ -272,7 +271,6 @@ p {
 }
 div.third-page > .container {
   height: 911px;
-  
 }
 .grid__third-page {
   display: grid;
@@ -381,7 +379,7 @@ div.other__elem2 {
   width: 100%;
 }
 .grid__fourth-page,
-.grid__fifth-page {
+.-page {
   height: 100%;
   display: grid;
   grid-template-rows: max-content max-content max-content;
@@ -455,6 +453,16 @@ div.fourth-page__cards > div.third-card {
   background-repeat: no-repeat;
   background-position: center;
 }
+.man_mobile {
+  position: absolute;
+  background-image: url("pictures1/second mobile.png");
+  width: 96px;
+  height: 96px;
+  display: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 div.fourth-page__cards h3,
 h6,
 p {
@@ -488,8 +496,10 @@ div.fourth-page__cards img {
 }
 
 div.grid__fifth-page > h2 {
-  margin-top: 80px;
-  letter-spacing: 0.1px;
+  padding-top: 80px;
+  letter-spacing: -0.4px;
+  width: 316px;
+  margin: 0 auto;
 }
 
 div.grid__fifth-page > p {
@@ -518,20 +528,99 @@ div.fifth-page__cards > div {
   box-sizing: border-box;
 }
 div.fifth-page__cards h6 {
-  margin-top: -8px;
   color: #ffa62b;
+  margin: -9px auto 0;
 }
 div.fifth-page__cards h5 {
-  margin-top: -7px;
+  margin: -7px auto 0;
   color: #000000;
 }
 div.fifth-page__cards p {
   width: 149px;
   margin-top: -11px;
   margin-left: 38px;
+  text-align: center;
 }
-div.fifth-page__cards > div > img {
-  margin: 30px auto 0px;
+
+.first-card__img_desctope {
+  margin: 30px 50px 0px;
+  background-image: url("pictures1/1consul.png");
+  width: 128px;
+  height: 128px;
+  display: ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.second-card__img_desctope {
+  margin: 30px 50px 0px;
+  background-image: url("pictures1/2consul.png");
+  width: 128px;
+  height: 128px;
+  display: ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.third-card__img_desctope {
+  margin: 30px 50px 0px;
+  background-image: url("pictures1/ceo.png");
+  width: 128px;
+  height: 128px;
+  display: ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fourth-card__img_desctope {
+  margin: 30px 50px 0px;
+  background-image: url("pictures1/3consul.png");
+  width: 128px;
+  height: 128px;
+  display: ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.first-card__img_mobile {
+ 
+  background-image: url("pictures1/cons-mobile.png");
+  width: 128px;
+  height: 128px;
+  display: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.second-card__img_mobile {
+
+  background-image: url("pictures1/man.png");
+  width: 128px;
+  height: 128px;
+  display: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.third-card__img_mobile {
+
+  background-image: url("pictures1/man.png");
+  width: 128px;
+  height: 128px;
+  display: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fourth-card__img_mobile {
+  
+  background-image: url("pictures1/cons4-mobile.png");
+  width: 128px;
+  height: 128px;
+  display: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 div.fifth-page__cards > div.first-card {
   margin-left: 6px;
@@ -594,6 +683,13 @@ div.fifth-page__cards > div.fourth-card {
   display: grid;
   grid-template-columns: max-content max-content;
   grid-template-rows: max-content;
+}
+
+.seven-page__quote-form img {
+  width: 364px;
+  height: 644px;
+
+  object-fit: cover;
 }
 form {
   padding: 40px 50px;
