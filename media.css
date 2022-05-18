@@ -235,27 +235,84 @@
   div.fifth-page__cards > div.fourth-card {
     margin: 0 auto;
     width: 331px;
-    height: 291px; 
+    height: 291px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-  
+    /*does not work correctly*/
+  }
 
   .desctope {
     display: none;
   }
- 
-  /*
-  8
-  *
-  8
-  8
-  8
-  */
+  .six-page {
+    height: 880px;
+  }
+  .grid__six-page {
+    grid-template-columns: 1fr;
+    grid-template-areas: "h2" "text" "img";
+  }
+
+  .six-page > .container {
+    height: auto;
+  }
+  .grid__six-page > img {
+    width: 313px;
+    height: 129px;
+    padding-top: 44px;
+    padding-left: 13px;
+  }
+  .grid__six-page > h2 {
+    width: 316px;
+  }
+  .grid__six-page > p {
+    width: 305px;
+  }
+  .seven-page {
+    height: 960px;
+  }
+
   .seven-page__quote-form img {
     width: 414px;
-  height: 259px;
+    height: 259px;
+  }
+  .quote-form {
+    grid-template-columns: 1fr;
+    top: 0px;
+  }
+  form {
+    width: 414px;
+    height: 701px;
+  }
+
+  form > input[type="text"],
+  form select {
+    width: 311px;
+  }
+  form > input[type="submit"] {
+    width: 314px;
+  }
+  .eight-page {
+    height: 1005px;
+  }
+  footer > .container {
+    height: 907px;
+    width: 344px;
+  }
+  .grid__footer {
+    grid-template-columns: 1fr;
+    width: auto;
+    /*align-items: center;*/
+    padding-left: 52px;
+  }
+  .authors {
+    height: 98px;
+  }
+  .authors > h6 {
+    width: 212px;
+    margin: auto auto;
+    letter-spacing: -0.2px;
+  }
 }
 /* line-height*/

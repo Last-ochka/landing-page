@@ -60,7 +60,7 @@ header {
 h3 {
   margin-top: 36px;
   width: 99px;
-  float: left;
+
   color: white;
   font-family: Montserrat;
   font-weight: 700;
@@ -424,13 +424,13 @@ div.fourth-page__cards > div {
   position: relative;
 }
 div.fourth-page__cards > div.first-card {
-  margin-left: 127px;
+  margin-left: 121px;
 }
 div.fourth-page__cards > div.second-card {
-  margin-left: 101px;
+  margin-left: 98px;
 }
 div.fourth-page__cards > div.third-card {
-  margin-left: 69px;
+  margin-left: 71px;
 }
 
 .icon-star {
@@ -583,7 +583,6 @@ div.fifth-page__cards p {
   background-position: center;
 }
 .first-card__img_mobile {
- 
   background-image: url("pictures1/cons-mobile.png");
   width: 128px;
   height: 128px;
@@ -593,7 +592,6 @@ div.fifth-page__cards p {
   background-position: center;
 }
 .second-card__img_mobile {
-
   background-image: url("pictures1/man.png");
   width: 128px;
   height: 128px;
@@ -603,7 +601,6 @@ div.fifth-page__cards p {
   background-position: center;
 }
 .third-card__img_mobile {
-
   background-image: url("pictures1/man.png");
   width: 128px;
   height: 128px;
@@ -613,7 +610,6 @@ div.fifth-page__cards p {
   background-position: center;
 }
 .fourth-card__img_mobile {
-  
   background-image: url("pictures1/cons4-mobile.png");
   width: 128px;
   height: 128px;
@@ -636,7 +632,6 @@ div.fifth-page__cards > div.fourth-card {
 }
 .six-page > .container {
   height: 807px;
-  width: 1054px;
 }
 .grid__six-page {
   padding-top: 44px;
@@ -709,7 +704,6 @@ form > h2 {
 }
 
 form > input[type="text"],
-input[type="email"],
 select {
   box-sizing: border-box;
   width: 585px;
@@ -726,8 +720,7 @@ select {
   font-weight: 400;
   margin-left: 2px;
 }
-form > input[type="text"],
-input[type="email"] {
+form > input[type="text"] {
   padding-left: 21px;
 }
 
