@@ -311,6 +311,11 @@ div.third-page__text > p {
 .video {
   grid-area: video;
 }
+.plyr__control--overlaid {
+  width: 97px;
+  height: 99px;
+  margin-left: 2px;
+}
 
 div.outher {
   grid-area: other;
@@ -481,11 +486,22 @@ div.fourth-page__cards h3 {
   padding: 0;
   white-space: nowrap;
 }
-div.fourth-page__cards img {
+div.fourth-page__first-card img {
   position: absolute;
   left: -63px;
   top: 28px;
 }
+div.fourth-page__second-card img {
+  position: absolute;
+  left: -63px;
+  top: 28px;
+}
+div.fourth-page__third-card img {
+  position: absolute;
+  left: -63px;
+  top: 28px;
+}
+
 .fourth-page__stars {
   margin-top: 20px;
 }
