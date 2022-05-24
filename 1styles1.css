@@ -17,7 +17,9 @@ body {
   padding-top: 1px;
   padding-left: 5px;
 }
-
+.first-page__logo {
+  z-index: 101;
+}
 .grid__first-page {
   display: grid;
   grid-gap: 10px;
@@ -39,6 +41,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 101;
 }
 .icon-cart {
   position: relative;
@@ -49,6 +52,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 101;
 }
 header {
   grid-area: header;
@@ -67,6 +71,7 @@ h3 {
   font-size: 23px;
   line-height: 32px;
   letter-spacing: 0.1px;
+  z-index: 101;
 }
 .menu ul {
   display: flex;
@@ -127,18 +132,16 @@ h4 {
 .cart {
   padding-top: 44px;
 }
+
 .nav-toggle {
   display: none;
   position: relative;
-  height: 13.714286804199219px;
-  width: 22.85713768005371px;
 
   top: 44px;
   left: 4px;
 
   border-radius: 0px;
 
-  background: url(pictures1/nav.png) no-repeat right;
   cursor: pointer;
 }
 .first-button {
