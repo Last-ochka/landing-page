@@ -112,7 +112,7 @@
     width: 100vw;
     z-index: 100;
   }
-  .desctope {
+  .desktop {
     display: none;
   }
   .mobile {
@@ -382,7 +382,7 @@
     text-align: center;
   }
 
-  .desctope {
+  .desktop {
     display: none;
   }
   .six-page {
@@ -572,7 +572,7 @@
     grid-template-columns: 10fr 8fr 2fr;
     padding-top: 22px;
   }
-  .iteams li {
+  .items li {
     padding-right: 16px;
   }
   .lupa {
@@ -730,7 +730,7 @@
     align-items: center;
     /*does not work correctly*/
   }
-  .desctope {
+  .desktop {
     display: none;
   }
   .first-card__img_mobile,
