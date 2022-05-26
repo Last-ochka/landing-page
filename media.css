@@ -145,7 +145,7 @@
   .first-page_buttons {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   h1,

@@ -317,10 +317,18 @@ div.third-page__text > p {
   margin-bottom: 91px;
 }
 
+.plyr__control--overlaid svg[focusable] {
+  left: 23px;
+  position: relative;
+  transform: scale(1.54);
+  top: -1px;
+  background: #00a0c1;
+}
+
 .video {
   grid-area: video;
 }
-.plyr__control--overlaid {
+.plyr__control--overlaid[type] {
   width: 97px;
   height: 99px;
   margin-left: 2px;
